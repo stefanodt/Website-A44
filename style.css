@@ -4,8 +4,8 @@
 }
 
 body {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     background-color: black;
     background-image: url("img/IMG-20190117-WA0005.jpg");
     background-repeat: no-repeat;
@@ -22,9 +22,8 @@ div#wrapper {
 }
 
 #logo {
-    width:100%;
+    width: 100%;
 }
-
 
 
 header {
@@ -32,9 +31,8 @@ header {
 }
 
 #header-text {
-    color:white;
+    color: white;
 }
-
 
 
 nav {
@@ -42,27 +40,34 @@ nav {
     grid-column-gap: 0px;
     grid-row-gap: 1px;
     text-align: center;
-    margin: auto;
-    height:50px;
+    padding-top: 10px;
+    height: 50px;
 }
 
 nav a {
     text-decoration: none;
-    color:white;
+    color: white;
     align-self: center;
+    margin-right: 10px;
+    height: 30px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: black;
 
 }
 
+#bottomlinks {
+    padding: 10px;
+}
 
+#bottomlinks a {
 
+}
 
 
 section, footer {
-    padding:20px;
+    padding: 20px;
 }
 
 
@@ -72,15 +77,15 @@ section, footer {
     grid-row-gap: 10px;
 }
 
-#section{
-    height:100%;
-    display:grid;
+#section {
+    height: 100%;
+    display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    padding: 10px;
+ }
 
-}
-
-div#section a{
+div#section a {
     width: 100%;
     display: grid;
     grid-column-gap: 10px;
@@ -88,7 +93,6 @@ div#section a{
     margin: auto;
     color: black;
     text-decoration: none;
-
 }
 
 .article {
@@ -96,85 +100,79 @@ div#section a{
     background-color: white;
     padding: 10px;
     transition: box-shadow .25s;
-    box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.10)
-
+    box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.10)
 }
+
 article {
     width: 100%;
     display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-
-    padding:10px;
-
+    padding: 10px;
 }
 
 #article1 {
     text-align: justify;
-    display: inline-block;
-    width:100%;
-    max-width:500px;
+    display: inline;
+    width: 100%;
+    max-width: 500px;
 }
 
 
 #article2 {
     text-align: justify;
     display: inline-block;
-    width:100%;
-    max-width:500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 #article3 {
     text-align: justify;
     display: inline-block;
-    width:100%;
-    max-width:500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 #homepagefoto {
-    width:100%;
+    width: 100%;
 }
 
 
 #top-container {
-   background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #footer-container {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     transition: box-shadow .25s;
-    box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.10);
-    padding:5px;
-    padding-bottom:0px;
+    box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.10);
+    padding: 5px;
+    padding-bottom: 0px;
 
 }
 
 
-
 iframe {
-    border:black 1px;
-    height:310px;
-    width:100%;
-
-
+    border: black 1px;
+    height: 310px;
+    width: 100%;
 }
 
 #bottomlinks {
     text-align: center;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-#bottomlinks a{
-    color:white;
+#bottomlinks a {
+    color: white;
     text-decoration: none;
 }
 
 #copyright {
-    color:white;
+    color: white;
     text-align: left;
-    padding:5px;
+    padding: 5px;
 }
-
 
 
 @media all and (min-width: 992px) {
@@ -187,7 +185,7 @@ iframe {
     }
 
     #article2 {
-      grid-row: 1;
+        grid-row: 1;
         grid-column: 2;
 
     }
@@ -206,7 +204,23 @@ iframe {
 }
 
 
+@media all and (max-width: 992px) {
+    #footer-container {
+        width: 500px;
+    }
 
-@media all and (min-width: 768px) {
+    div#wrapper {
+        max-width: 550px;
+    }
+}
 
+
+@media all and (max-width: 768px) {
+    #footer-container {
+        width: 500px;
+    }
+
+    div#wrapper {
+        max-width: 550px;
+    }
 }
